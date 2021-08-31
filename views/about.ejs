@@ -1,0 +1,124 @@
+<!-- EJS Header -->
+<head>
+  <title>About Rico Ngo</title>
+</head>
+<%- include("partials/header") -%>
+
+
+<!-- Main content - about me -->
+
+<section class="container py-5 pb-3">
+    <div class="row justify-content-start pb-5 center-about-photo">
+        <div class="col-md-5 offset-md-1 text-center ">
+            <img class="style-about-photo rounded img-fluid" src="/images/rico-profile.JPG" alt="profile-photo">
+        </div>
+        <div class="col-md-6 offset-md-0 px-5">
+            <h1 class="pb-2 py-3 text-center fw-bold ">About me. <span class="text-muted">Who's Rico?</span></h1>
+            <p><%= firstParagraph %> </p>
+            <p><%= secondParagraph %> </p>
+            <p><%= thirdParagraph %> </p>
+            <p>For more info visit my LinkedIn page or view my portfolio <a href="portfolio">here</a>.</p>
+            <a href="https://www.linkedin.com/in/rico-ngo/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
+        </div>
+    </div>
+</section>
+<!-- Short overview - about me -->
+
+<section class="marketing page-section-background2 px-5">
+
+    <div class="row py-5">
+        <h1 class="text-center pb-5">My other roles</h1>
+        <div class="col-lg-4">
+            <i class="fas fa-route fa-7x about-me-icons" ></i>
+            <h2 class="py-2 pt-3">Product consultant</h2>
+            <p>With my experience and knowledge, I help individuals and organisations to get the results they want with effective product management structure & processes.</p>
+        </div>
+        <div class="col-lg-4">
+            <i class="fas fa-hand-holding-medical fa-7x about-me-icons"></i>
+
+            <h2 class="py-2 pt-3">Student Mentor</h2>
+            <p>In my spare time, I am a volunteer for a school mentoring project. The purpose is to guide students to achieve the goals they want. </p>
+        </div class="py-2 ">
+        <div class="col-lg-4">
+            <i class="fas fa-laptop-code fa-7x about-me-icons"></i>
+            <h2 class="py-2 pt-3">A wannabe developer</h2>
+            <p>Since the pandemic, I started to learn coding. I'm helping other individuals to build their own website, so I get more opportunities to improve myself.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- In-depth about me information -->
+<section class="px-5 pb-5">
+    
+<div class="row featurette pt-5">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">I like to discover. <span class="text-muted">Traveling around the globe.</span></h2>
+      <p class="lead">Since I was young, I had the opportunity to visit many beautiful countries and I love it! Gaining new experiences and lifetime memories are always done best by traveling to new destinations.</p>
+    </div>
+    <div class="col-md-5">
+    <img src="/images/rico-travel.JPG" class="rounded bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" preserveAspectRatio="xMidYMid slice" focusable="false" >
+    </div>
+  </div>
+
+  <hr class="featurette-divider2">
+
+  <div class="row featurette">
+    <div class="col-md-7 order-md-2">
+      <h2 class="featurette-heading">Drum & Bass is the way. <span class="text-muted">Always in for a Liquicity festival.</span></h2>
+      <p class="lead">In the past I wasn't really passionated about music, but since I have discovered Drum & Bass... I am totally hooked. I'm a great fan of Liquicity, a DnB record label, and I can't wait to be on a festival again with my fams & mates!</p>
+    </div>
+    <div class="col-md-5 order-md-1">
+        <img src="/images/rico-music.jpg" class="rounded bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" preserveAspectRatio="xMidYMid slice" focusable="false" >
+
+    </div>
+  </div>
+
+  <hr class="featurette-divider2">
+
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">Videography. <span class="text-muted">Once a while, I make a video clip.</span></h2>
+      <p class="lead">Ever since I got my first GoPro in 2013, I tried making & editing travel videos. My purpose is to reflect the vibes and emotions of those trips. This is great for future memories! I'll share those videos another time.</p>
+    </div>
+    <div class="col-md-5">
+        <img src="/images/rico-video.png" class="rounded bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" preserveAspectRatio="xMidYMid slice" focusable="false" >
+
+    </div>
+  </div>
+
+<hr class="featurette-divider2">
+
+<div class="row featurette">
+  <div class="col-md-7 order-md-2">
+    <h2 class="featurette-heading">Studying & working abroad. <span class="text-muted">Challenges has no boundaries.</span></h2>
+    <p class="lead">During my studies, I got the opportunity to study abroad in Louisville, Kentucky - USA and do an internship in Shanghai, China. Experiencing both opposite worlds has broadened my horizon. So I'm always open for exicting international opportunities.</p>
+  </div>
+  <div class="col-md-5 order-md-1">
+      <img src="/images/rico-studyabroad.jpg" class="rounded bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" preserveAspectRatio="xMidYMid slice" focusable="false" >
+
+  </div>
+</div>
+</section>
+
+<section class="page-section-background">
+  <div class="content py-5">
+    <h1 class="text-center">Interested in my work or what I could do for you?</h1>
+    <h2 class="pb-3 text-center">Lets get in touch and leave a message.</h2>
+    <div class="container text-center contact-form">
+      <form class="p-5 border rounded-3 bg-light" action="https://formspree.io/f/xzbydwrk" method="POST">
+        <div class="mb-3 text-start">
+          <label class="pb-2" for="floatingInput"> Your email address</label>
+          <input name="_replyto" type="email" class="form-control" id="floatingInput" placeholder="johnwick@continental.com">
+        </div>
+        <div class="mb-3 text-start">
+          <label class="form-label" id="floatingInput">Your message</label>
+          <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="My dog has gone missing. Where can I find my dog?"></textarea>
+        </div>
+        <button class="btn btn-primary my-2" type="submit">Send it!</button>
+      </form>
+    <section>
+
+
+<!-- EJS Footer -->
+<%- include("partials/footer") -%>

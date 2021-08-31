@@ -1,0 +1,50 @@
+<!-- EJS Header -->
+<head>
+  <title>Contact Rico Ngo</title>
+</head>
+<%- include("partials/header") -%> 
+
+<!-- Main content -->
+
+<div class="container col-xxl-8 px-4 py-5">
+  <div class="row align-items-center g-5 py-5">
+    <div class="col-10 col-sm-8 col-lg-6">
+      <img src="images/rico-office.jpg" class="d-block mx-lg-auto img-fluid rounded" alt="Bootstrap Themes" width="500" height="400" loading="lazy">
+    </div>
+    <div class="col-lg-6">
+      <h1 class="pb-2 py-1 fw-bold lh-1">Contact me. <span class="text-muted">If you want to.</span></h1>
+        <p><%= firstParagraph %> </p>
+        <div class="gap-3 d-md-flex justify-content-md-start"> 
+          <a href="https://www.linkedin.com/in/rico-ngo/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
+          <a href="https://github.com/RicoAtN" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+          <a href="https://www.rico.ngo" target="_blank"><i class="fas fa-user-circle fa-3x"></i></a>
+          <a href="https://www.instagram.com/ricon8/" target="_blank"><i class="fab fa-instagram-square fa-3x"></i></a>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Contact form -->
+
+<section class="page-section-background">
+    <div class="content py-5">
+      <h1 class="text-center">Interested in my work or what I could do for you?</h1>
+      <h2 class="pb-3 text-center">Lets get in touch and leave a message.</h2>
+      <div class="container text-center contact-form">
+        <form class="p-5 border rounded-3 bg-light" action="https://formspree.io/f/xzbydwrk" method="POST">
+          <div class="mb-3 text-start">
+            <label class="pb-2" for="floatingInput"> Your email address</label>
+            <input name="_replyto" type="email" class="form-control" id="floatingInput" placeholder="johnwick@continental.com">
+          </div>
+          <div class="mb-3 text-start">
+            <label class="form-label" id="floatingInput">Your message</label>
+            <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="My dog has gone missing. Where can I find my dog?"></textarea>
+          </div>
+          <button class="btn btn-primary my-2" type="submit">Send it!</button>
+        </form>
+              
+  </section>
+
+<!-- EJS Footer -->
+<%- include("partials/footer") -%> 
